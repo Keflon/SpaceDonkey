@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:z="clr-namespace:FunctionZero.zBind.z;assembly=FunctionZero.zBind"
+             x:Class="SpaceDonkey.Mvvm.Pages.HomePage"
+             Title="Space Donkey!">
+    <ContentPage.Content>
+        <Grid RowDefinitions="Auto, Auto, *, Auto">
+            <!--<Button Grid.Row="0" Text="{Binding ApodCommand.Text}" Command="{Binding ApodCommand}"/>-->
+            <DatePicker Grid.Row="0" Date="{Binding PictureDate}"/>
+            <Label Grid.Row="1" Text="{Binding ApodData.Title}" HorizontalOptions="CenterAndExpand" />
+            <Image x:Name="Test" Grid.Row="2" Source="{Binding ApodData.Url}" IsVisible="{z:Bind 'ApodData != null'}"/>
+            <Label x:Name="Test2" Grid.Row="2" Text="Problem" IsVisible="{z:Bind '(ApodData != null) == false'}"/>
+
+            <Label Grid.Row="3" Text="{Binding ApodData.Explanation}" HorizontalOptions="CenterAndExpand" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
