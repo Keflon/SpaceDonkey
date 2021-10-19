@@ -46,7 +46,7 @@ namespace SpaceDonkey.Mvvm.PageViewModels
 
                 if (result.status == Services.Rest.ResultStatus.Success)
                 {
-                    ApodData = result.payload.First();
+                    ApodData = result.payload.FirstOrDefault();
                 }
                 else
                 {

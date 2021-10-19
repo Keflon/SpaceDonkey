@@ -7,7 +7,7 @@ namespace SpaceDonkey.Boilerplate
     public class ApiConstants
     {
         public const string BaseApiUrl = "https://api.nasa.gov";
-        public const string ApiKey = "DEMO_KEY";
+        public const string ApiKey = "96CZNUQO24dd4RHsHyQndZ2e7DLpAQSpOMGr2K4U";
         public const string ApodServiceEndpoint = "planetary/apod";
     }
 }
