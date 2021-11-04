@@ -8,6 +8,15 @@ namespace SpaceDonkey.Services.Rest
         Task<(ResultStatus status, TResponse payload, string rawResponse)> PostAsync<TRequest, TResponse>(TRequest request, string url);
     }
 
+
+
+
+
+
+
+
+
+
     public enum ResultStatus
     {
         Success = 0,

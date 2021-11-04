@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace SpaceDonkey.Services.Rest
 {
-    class RestService : IRestService
+    public class RestService : IRestService
     {
         private readonly HttpClient _httpClient;
         private readonly string _host;

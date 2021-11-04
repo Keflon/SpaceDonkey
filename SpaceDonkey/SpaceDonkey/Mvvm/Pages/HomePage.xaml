@@ -10,6 +10,12 @@
             <Image Grid.Row="2" Source="{Binding ApodData.Url}" IsVisible="{z:Bind 'ApodData != null'}"/>
             <Label Grid.Row="2" Text="No Data" IsVisible="{z:Bind 'ApodData == null'}" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
             <Label Grid.Row="3" Text="{Binding ApodData.Explanation}" />
+
+
+            <Button Text="My test button" Command="{Binding TestCommand}" />
+
+
+
         </Grid>
     </ContentPage.Content>
 </ContentPage>

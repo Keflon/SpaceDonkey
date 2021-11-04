@@ -27,7 +27,7 @@ namespace SpaceDonkey.Boilerplate
             _iocc.Register<IRestService>(GetRestService, Lifestyle.Singleton);
             _iocc.Register<ApodService>(GetApodService, Lifestyle.Singleton);
 
-            
+            _iocc.Register<OmdbService>(Lifestyle.Singleton);
         }
 
         private ApodService GetApodService()
